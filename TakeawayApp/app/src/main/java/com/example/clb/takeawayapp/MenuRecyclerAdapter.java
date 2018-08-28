@@ -31,6 +31,7 @@ public class MenuRecyclerAdapter extends RecyclerView.Adapter<MenuRecyclerAdapte
         return new ViewHolder(item);
     }
 
+    //this is passed the new viewholder item and allows you to add the relevant data for this position
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
