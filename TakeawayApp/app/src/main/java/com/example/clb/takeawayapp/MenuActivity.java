@@ -45,6 +45,7 @@ public class MenuActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //this sets up all the elements of the Recycler View
     private void displayMenuView(){
 
         final RecyclerView menu = findViewById(R.id.menu_list);
@@ -64,6 +65,7 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    //processes the menu data obtained from the readLines function in to a list
     private List<MenuOption> getMenuData() {
 
         List<MenuOption> menu = new ArrayList<>();
@@ -75,7 +77,9 @@ public class MenuActivity extends AppCompatActivity {
 
             for (int i = 0; i < menuList.length(); i++){
 
-                MenuOption option = new MenuOption((menuList.getJSONObject(i).getString("name")), (menuList.getJSONObject(i).getString("price")));
+                MenuOption option = new MenuOption(
+                    (menuList.getJSONObject(i).getString("name")),
+                                                   (menuList.getJSONObject(i).getString("price")));
 
                 menu.add(option);
             }
@@ -86,6 +90,8 @@ public class MenuActivity extends AppCompatActivity {
            return menu;
     }
 
+    
+    //this function reads from a text file in the assets folder which provides the data for the menu
     public JSONObject readLines(String filename) {
         StringBuilder stringBuilder = new StringBuilder();
         AssetManager assets = this.getAssets();
