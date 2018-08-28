@@ -98,6 +98,7 @@
             android:background="?attr/colorPrimaryDark"
             android:text="@string/title_activity_about_page"
             android:textColor="?attr/colorPrimary"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:onClick="toAboutPage"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

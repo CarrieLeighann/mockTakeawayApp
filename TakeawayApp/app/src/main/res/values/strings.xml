@@ -8,5 +8,12 @@
     <string name="title_activity_about_page">About</string>
     <string name="gdp"> £ </string>
 
+    <string name="attribution">CC BY-NC 4.0 Licence http://getdrawings.com/fish-and-chips-drawing#fish-and-chips-drawing-7.png</string>
+
+    <string name="ad_lab">Address</string>
+    <string name="tel_lab">Telephone</string>
+    <string name="oh_lab">Opening Hours</string>
+    <string name="address"> 32 High Street, Townsville</string>
+    <string name="tel"> 023654755742</string>
 
 </resources>

@@ -46,4 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(new Intent(this, MenuActivity.class));
     }
+
+    public void toAboutPage(View view) {
+        startActivity(new Intent(this, AboutPage.class));
+    }
 }
